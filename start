@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+name = ARGV.first
+system "subl #{name}.c"
+system "subl #{name}.in"

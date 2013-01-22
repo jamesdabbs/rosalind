@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+name = ARGV.first
+system "mv ~/Downloads/rosalind_#{name}.txt #{name}.in"
+system "gcc #{name}.c"
+system "./a.out < #{name}.in > #{name}.out"
+system "cat #{name}.out"
